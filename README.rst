@@ -10,6 +10,35 @@ If something was unclear I tried to do what AdaIn does instead. Results are at t
 
 `Direct link to the kernel predictor module. <https://github.com/RElbers/ada-conv-pytorch/blob/master/lib/adaconv/kernel_predictor.py/>`_
 
+Installation on Ubuntu 20.04 LTS
+-----
+
+Create Anaconda virtual Environment
+
+.. code::
+
+    conda create --name adaconv python=3.9
+
+Install pytorch
+
+.. code::
+
+    conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
+    
+install pytorch-lightning
+
+.. code::
+
+    pip install pytorch-lightning     
+    
+I got an error with torchvision, so I needed to import 'torch' and 'torchinfo' manually
+
+.. code::
+
+    import torch
+    import torchvision
+    
+
 Usage
 -----
 
